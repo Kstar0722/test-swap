@@ -1,0 +1,57 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+.nextjs-toast-errors-parent{
+  display: none;
+}
+nextjs-portal {
+  display: none;
+}
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+.pink-input::placeholder {
+  color: #cb00fa40;
+  opacity: 1; /* Firefox */
+}
+
+.pink-input::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: #cb00fa40;
+}
+
+@font-face {
+  font-family: 'SofiaProSoft';
+  src: url('../fonts/SofiaProSoft/SofiaProSoftLight.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SofiaProSoft';
+  src: url('../fonts/SofiaProSoft/SofiaProSoftReg.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SofiaProSoft';
+  src: url('../fonts/SofiaProSoft/SofiaProSoftMed.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SofiaProSoft';
+  src: url('../fonts/SofiaProSoft/SofiaProSoftBold.otf');
+  font-weight: 700;
+  font-style: normal;
+}

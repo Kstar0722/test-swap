@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "src/*": ["./src/*"],
+      "@/app/*": ["./src/app/*"],
+      "@/components/*": ["./src/components/*"],
+      "src/components/*": ["./src/components/*"],
+      "@/config/*": ["./src/config/*"],
+      "@/const/*": ["./src/const/*"],
+      "@/src/const/": ["./src/const/*"],
+      "@/fonts/*": ["./src/fonts/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "src/hooks/*": ["./src/hooks/*"],
+      "@/i18n/*": ["./src/i18n/*"],
+      "@/providers/*": ["./src/providers/*"],
+      "@/stores/*": ["./src/stores/*"],
+      "src/themes/*": ["./src/themes/*"],
+      "src/utils/*": ["./src/utils/*"],
+      "@/types/*": ["./src/types/*"],
+      "@/utils/*": ["./src/utils/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"],
+  "rules": {
+    "no-extra-boolean-cast": "off" // Disable if necessary
+  }
+}
